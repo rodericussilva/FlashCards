@@ -6,9 +6,33 @@
     android:padding="16dp">
 
     <Button
-        android:id="@+id/categoryTravel"
+        android:id="@+id/categoryClothes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_travel" />
-    <!-- Adicionar mais categorias conforme necessário -->
+        android:text="Roupas" />
+
+    <Button
+        android:id="@+id/categoryProfessions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profissões" />
+
+    <Button
+        android:id="@+id/categoryAnimals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animais" />
+
+    <Button
+        android:id="@+id/categoryFruits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frutas" />
+
+    <Button
+        android:id="@+id/categoryColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cores" />
+
 </LinearLayout>

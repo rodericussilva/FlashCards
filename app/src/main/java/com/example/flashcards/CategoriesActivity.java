@@ -15,15 +15,23 @@ public class CategoriesActivity extends AppCompatActivity {
 
         selectedLanguage = getIntent().getStringExtra("language");
 
-        Button btnTravel = findViewById(R.id.categoryTravel);
-        // Adicionar mais categorias conforme necessário
+        Button btnClothes = findViewById(R.id.categoryClothes);
+        Button btnProfessions = findViewById(R.id.categoryProfessions);
+        Button btnAnimals = findViewById(R.id.categoryAnimals);
+        Button btnFruits = findViewById(R.id.categoryFruits);
+        Button btnColors = findViewById(R.id.categoryColors);
 
-        btnTravel.setOnClickListener(v -> {
-            Intent intent = new Intent(CategoriesActivity.this, FlashcardsActivity.class);
-            intent.putExtra("category", "Travel");
-            intent.putExtra("language", selectedLanguage);
-            startActivity(intent);
-        });
+        btnClothes.setOnClickListener(v -> openFlashcards("Clothes"));
+        btnProfessions.setOnClickListener(v -> openFlashcards("Professions"));
+        btnAnimals.setOnClickListener(v -> openFlashcards("Animals"));
+        btnFruits.setOnClickListener(v -> openFlashcards("Fruits"));
+        btnColors.setOnClickListener(v -> openFlashcards("Colors"));
+    }
+
+    private void openFlashcards(String category) {
+        Intent intent = new Intent(CategoriesActivity.this, FlashcardsActivity.class);
+        intent.putExtra("category", category);
+        intent.putExtra("language", selectedLanguage);
+        startActivity(intent);
     }
 }
-

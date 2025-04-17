@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cartes Éclair</string>
+    <string name="btn_start">Commencer</string>
+    <string name="btn_favorites">Favoris</string>
+    <string name="category_clothes">Vêtements</string>
+    <string name="category_professions">Professions</string>
+    <string name="category_animals">Animaux</string>
+    <string name="category_fruits">Fruits</string>
+    <string name="category_colors">Couleurs</string>
+    <string name="selected_language">Langue sélectionnée :</string>
+    <string name="btn_next">Suivant</string>
+    <string name="btn_favorite">Favoris</string>
+</resources>

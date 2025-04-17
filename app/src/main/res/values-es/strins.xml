@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tarjetas Didácticas</string>
+    <string name="btn_start">Comenzar</string>
+    <string name="btn_favorites">Favoritos</string>
+    <string name="category_clothes">Ropa</string>
+    <string name="category_professions">Profesiones</string>
+    <string name="category_animals">Animales</string>
+    <string name="category_fruits">Frutas</string>
+    <string name="category_colors">Colores</string>
+    <string name="selected_language">Idioma seleccionado:</string>
+    <string name="btn_next">Siguiente</string>
+    <string name="btn_favorite">Favoritos</string>
+</resources>
