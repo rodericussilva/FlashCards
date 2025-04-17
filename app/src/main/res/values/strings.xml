@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Flashcards</string>
+    <string name="btn_start">Iniciar</string>
+    <string name="btn_favorites">Favoritos</string>
+    <string name="category_travel">Viagens</string>
+    <string name="btn_next">Próximo</string>
+    <string name="btn_favorite">Favorito</string>
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Français</item>
+        <item>Português</item>
+        <item>Español</item>
+    </string-array>
+</resources>
