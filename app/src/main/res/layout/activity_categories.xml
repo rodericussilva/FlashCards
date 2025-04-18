@@ -9,30 +9,29 @@
         android:id="@+id/categoryClothes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Roupas" />
+        android:text="@string/category_clothes" />
 
     <Button
         android:id="@+id/categoryProfessions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Profissões" />
+        android:text="@string/category_professions" />
 
     <Button
         android:id="@+id/categoryAnimals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Animais" />
+        android:text="@string/category_animals" />
 
     <Button
         android:id="@+id/categoryFruits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Frutas" />
+        android:text="@string/category_fruits" />
 
     <Button
         android:id="@+id/categoryColors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cores" />
-
+        android:text="@string/category_colors" />
 </LinearLayout>

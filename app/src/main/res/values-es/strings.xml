@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flashcards</string>
+    <string name="btn_start">Comenzar</string>
+    <string name="btn_favorites">Favoritos</string>
+    <string name="category_clothes">Ropas</string>
+    <string name="category_professions">Profesiones</string>
+    <string name="category_animals">Animales</string>
+    <string name="category_fruits">Frutas</string>
+    <string name="category_colors">Colores</string>
+    <string name="selected_language">Seleccionar Idioma</string>
+    <string name="btn_next">Proximo</string>
+    <string name="btn_favorite">Favorito</string>
+
+    <string-array name="languages_array">
+        <item>Inglés</item>
+        <item>Portugués</item>
+        <item>Francés</item>
+        <item>Español</item>
+    </string-array>
+</resources>

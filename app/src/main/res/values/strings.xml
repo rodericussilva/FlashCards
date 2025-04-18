@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">Flashcards</string>
-    <string name="btn_start">Iniciar</string>
-    <string name="btn_favorites">Favoritos</string>
-    <string name="category_clothes">Roupas</string>
-    <string name="category_professions">Profissões</string>
-    <string name="category_animals">Animais</string>
-    <string name="category_fruits">Frutas</string>
-    <string name="category_colors">Cores</string>
-    <string name="selected_language">Idioma selecionado:</string>
-    <string name="btn_next">Próximo</string>
-    <string name="btn_favorite">Favoritos</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_favorites">Favorites</string>
+    <string name="category_clothes">Clothes</string>
+    <string name="category_professions">Professions</string>
+    <string name="category_animals">Animals</string>
+    <string name="category_fruits">Fruits</string>
+    <string name="category_colors">Colors</string>
+    <string name="selected_language">Select language</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_favorite">Favorite</string>
 
     <string-array name="languages_array">
         <item>English</item>
-        <item>Português</item>
-        <item>Français</item>
-        <item>Español</item>
+        <item>Portuguese</item>
+        <item>French</item>
+        <item>Spanish</item>
     </string-array>
 </resources>

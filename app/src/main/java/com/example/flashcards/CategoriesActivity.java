@@ -1,37 +1,33 @@
 package com.example.flashcards;
 
-import android.content.Intent;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CategoriesActivity extends AppCompatActivity {
-    private String selectedLanguage;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-        selectedLanguage = getIntent().getStringExtra("language");
+        Button categoryClothes = findViewById(R.id.categoryClothes);
+        Button categoryProfessions = findViewById(R.id.categoryProfessions);
+        Button categoryAnimals = findViewById(R.id.categoryAnimals);
+        Button categoryFruits = findViewById(R.id.categoryFruits);
+        Button categoryColors = findViewById(R.id.categoryColors);
 
-        Button btnClothes = findViewById(R.id.categoryClothes);
-        Button btnProfessions = findViewById(R.id.categoryProfessions);
-        Button btnAnimals = findViewById(R.id.categoryAnimals);
-        Button btnFruits = findViewById(R.id.categoryFruits);
-        Button btnColors = findViewById(R.id.categoryColors);
-
-        btnClothes.setOnClickListener(v -> openFlashcards("Clothes"));
-        btnProfessions.setOnClickListener(v -> openFlashcards("Professions"));
-        btnAnimals.setOnClickListener(v -> openFlashcards("Animals"));
-        btnFruits.setOnClickListener(v -> openFlashcards("Fruits"));
-        btnColors.setOnClickListener(v -> openFlashcards("Colors"));
-    }
-
-    private void openFlashcards(String category) {
-        Intent intent = new Intent(CategoriesActivity.this, FlashcardsActivity.class);
-        intent.putExtra("category", category);
-        intent.putExtra("language", selectedLanguage);
-        startActivity(intent);
+        categoryClothes.setText(getString(R.string.category_clothes));
+        categoryProfessions.setText(getString(R.string.category_professions));
+        categoryAnimals.setText(getString(R.string.category_animals));
+        categoryFruits.setText(getString(R.string.category_fruits));
+        categoryColors.setText(getString(R.string.category_colors));
     }
 }

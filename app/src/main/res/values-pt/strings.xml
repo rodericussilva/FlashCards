@@ -10,5 +10,12 @@
     <string name="category_colors">Cores</string>
     <string name="selected_language">Idioma selecionado:</string>
     <string name="btn_next">Próximo</string>
-    <string name="btn_favorite">Favoritos</string>
+    <string name="btn_favorite">Favorito</string>
+
+    <string-array name="languages_array">
+        <item>Inglês</item>
+        <item>Português</item>
+        <item>Francês</item>
+        <item>Espanhol</item>
+    </string-array>
 </resources>
