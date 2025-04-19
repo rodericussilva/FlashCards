@@ -87,7 +87,7 @@ public class FlashcardsActivity extends BaseActivity {
             case "Fruits":
                 flashcards.add(new Flashcard(R.drawable.banana, "fruits_banana"));
                 flashcards.add(new Flashcard(R.drawable.grape, "fruits_grape"));
-                flashcards.add(new Flashcard(R.drawable.pineapple, "fruits_pineaplle"));
+                flashcards.add(new Flashcard(R.drawable.pineapple, "fruits_pineapple"));
         }
     }
 
