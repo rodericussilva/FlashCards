@@ -24,6 +24,8 @@
         <activity android:name=".CategoriesActivity" />
 
         <activity android:name=".FlashcardsActivity" />
+
+        <activity android:name=".FavoritesActivity" />
     </application>
 
 </manifest>

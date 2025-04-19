@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnFavorites.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, FlashcardsActivity.class);
+            Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
             startActivity(intent);
         });
     }

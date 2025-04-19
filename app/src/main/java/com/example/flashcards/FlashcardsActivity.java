@@ -10,16 +10,20 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import android.content.SharedPreferences;
 
 public class FlashcardsActivity extends BaseActivity {
 
     private ImageView flashcardImage;
     private TextView flashcardText;
     private Button btnNext;
+    private Button btnFavorite;
     private boolean showingImage = true;
     private int currentIndex = 0;
     private List<Flashcard> flashcards = new ArrayList<>();
     private String category, language;
+    private SharedPreferences sharedPreferences;
+    private static final String FAVORITES_PREF = "favorites";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,8 @@ public class FlashcardsActivity extends BaseActivity {
         flashcardImage = findViewById(R.id.flashcardImage);
         flashcardText = findViewById(R.id.flashcardText);
         btnNext = findViewById(R.id.btnNext);
+        btnFavorite = findViewById(R.id.btnFavorite);
+        sharedPreferences = getSharedPreferences(FAVORITES_PREF, MODE_PRIVATE);
 
         category = getIntent().getStringExtra("category");
         language = getIntent().getStringExtra("language");
@@ -46,6 +52,8 @@ public class FlashcardsActivity extends BaseActivity {
             showingImage = true;
             updateFlashcard();
         });
+
+        btnFavorite.setOnClickListener(v -> toggleFavorite());
     }
 
     private void toggleFlashcard() {
@@ -64,6 +72,8 @@ public class FlashcardsActivity extends BaseActivity {
             flashcardImage.setVisibility(View.GONE);
             flashcardText.setVisibility(View.VISIBLE);
         }
+
+        updateFavoriteButton();
     }
 
     private int getStringIdByName(String name) {
@@ -117,5 +127,27 @@ public class FlashcardsActivity extends BaseActivity {
         android.content.res.Configuration config = res.getConfiguration();
         config.setLocale(locale);
         res.updateConfiguration(config, res.getDisplayMetrics());
+    }
+
+    private void toggleFavorite() {
+        Flashcard card = flashcards.get(currentIndex);
+        String key = card.getWordKey();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        boolean isFavorite = sharedPreferences.getBoolean(key, false);
+
+        if (isFavorite) {
+            editor.remove(key);
+        } else {
+            editor.putBoolean(key, true);
+        }
+
+        editor.apply();
+        updateFavoriteButton();
+    }
+
+    private void updateFavoriteButton() {
+        Flashcard card = flashcards.get(currentIndex);
+        boolean isFavorite = sharedPreferences.getBoolean(card.getWordKey(), false);
+        btnFavorite.setText(isFavorite ? "★" : "☆");
     }
 }
