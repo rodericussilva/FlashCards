@@ -19,6 +19,11 @@
     <string name="professions_fireman">Bombeiro</string>
     <string name="professions_baker">Padeiro</string>
     <string name="professions_nurse">Enfermeira</string>
+    <string name="animals_bird">Pássaro</string>
+    <string name="animals_horse">Cavalo</string>
+    <string name="animals_dog">Cachorro</string>
+    <string name="animals_lion">Leão</string>
+    <string name="animals_sheep">Ovelha</string>
     <string name="fruits_banana">Banana</string>
     <string name="fruits_grape">Uva</string>
     <string name="fruits_pineapple">Abacaxi</string>

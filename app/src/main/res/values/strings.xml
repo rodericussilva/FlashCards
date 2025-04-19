@@ -18,9 +18,19 @@
     <string name="professions_fireman">Fireman</string>
     <string name="professions_baker">Baker</string>
     <string name="professions_nurse">Nurse</string>
+    <string name="animals_bird">Bird</string>
+    <string name="animals_horse">Horse</string>
+    <string name="animals_dog">Dog</string>
+    <string name="animals_lion">Lion</string>
+    <string name="animals_sheep">Sheep</string>
     <string name="fruits_banana">Banana</string>
     <string name="fruits_grape">Grape</string>
     <string name="fruits_pineapple">Pineapple</string>
+    <string name="colors_black">Black</string>
+    <string name="colors_green">Green</string>
+    <string name="colors_red">Red</string>
+    <string name="colors_white">White</string>
+    <string name="colors_yellow">Yellow</string>
 
     <string-array name="languages_array">
         <item>English</item>

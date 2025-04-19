@@ -19,9 +19,19 @@
     <string name="professions_fireman">Bombero</string>
     <string name="professions_baker">Panadero</string>
     <string name="professions_nurse">Enfermera</string>
+    <string name="animals_bird">Pájaro</string>
+    <string name="animals_horse">Caballo</string>
+    <string name="animals_dog">Perro</string>
+    <string name="animals_lion">León</string>
+    <string name="animals_sheep">Oveja</string>
     <string name="fruits_banana">Banana</string>
     <string name="fruits_grape">Uva</string>
     <string name="fruits_pineapple">Piña</string>
+    <string name="colors_black">Negro</string>
+    <string name="colors_green">Verde</string>
+    <string name="colors_red">Rojo</string>
+    <string name="colors_white">Blanco</string>
+    <string name="colors_yellow">Amarillo</string>
 
 
     <string-array name="languages_array">

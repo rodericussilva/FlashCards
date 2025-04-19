@@ -84,10 +84,22 @@ public class FlashcardsActivity extends BaseActivity {
                 flashcards.add(new Flashcard(R.drawable.baker, "professions_baker"));
                 flashcards.add(new Flashcard(R.drawable.nurse, "professions_nurse"));
                 break;
+            case "Animals":
+                flashcards.add(new Flashcard(R.drawable.bird, "animals_bird"));
+                flashcards.add(new Flashcard(R.drawable.dog, "animals_dog"));
+                flashcards.add(new Flashcard(R.drawable.horse, "animals_horse"));
+                flashcards.add(new Flashcard(R.drawable.sheep, "animals_sheep"));
+                break;
             case "Fruits":
                 flashcards.add(new Flashcard(R.drawable.banana, "fruits_banana"));
                 flashcards.add(new Flashcard(R.drawable.grape, "fruits_grape"));
                 flashcards.add(new Flashcard(R.drawable.pineapple, "fruits_pineapple"));
+            case "Colors":
+                flashcards.add(new Flashcard(R.drawable.black, "colors_black"));
+                flashcards.add(new Flashcard(R.drawable.green, "colors_green"));
+                flashcards.add(new Flashcard(R.drawable.red, "colors_red"));
+                flashcards.add(new Flashcard(R.drawable.yellow, "colors_yellow"));
+                flashcards.add(new Flashcard(R.drawable.white, "colors_white"));
         }
     }
 
