@@ -40,11 +40,10 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         languageSpinner.setAdapter(adapter);
 
-        // Obter idioma salvo e aplicar seleção correta
         String currentLang = LocaleHelper.getLanguage(this);
         int langIndex = getLanguageIndex(currentLang);
         if (langIndex != -1) {
-            languageSpinner.setSelection(langIndex, false); // evita ativar listener no load
+            languageSpinner.setSelection(langIndex, false);
         }
 
         languageSpinner.setOnTouchListener((v, event) -> {
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String selectedLangCode = languageCodes[position];
                 LocaleHelper.setLocale(MainActivity.this, selectedLangCode);
-                recreate(); // Recria a activity com o novo idioma
+                recreate();
             }
 
             @Override
