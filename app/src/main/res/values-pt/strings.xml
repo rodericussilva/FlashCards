@@ -11,6 +11,15 @@
     <string name="selected_language">Idioma selecionado:</string>
     <string name="btn_next">Próximo</string>
     <string name="btn_favorite">Favorito</string>
+    <string name="clothes_shirt">Camisa</string>
+    <string name="clothes_grove">Luvas</string>
+    <string name="clothes_shoes">Sapatos</string>
+    <string name="professions_doctor">Médico</string>
+    <string name="professions_fireman">Bombeiro</string>
+    <string name="professions_nurce">Enfermeira</string>
+    <string name="fruits_banana">Banana</string>
+    <string name="fruits_grape">Uva</string>
+    <string name="fruits_pineapple">Abacaxi</string>
 
     <string-array name="languages_array">
         <item>Inglês</item>

@@ -10,6 +10,15 @@
     <string name="selected_language">Select language</string>
     <string name="btn_next">Next</string>
     <string name="btn_favorite">Favorite</string>
+    <string name="clothes_shirt">Shirt</string>
+    <string name="clothes_grove">Groves</string>
+    <string name="clothes_shoes">Shoes</string>
+    <string name="professions_doctor">Doctor</string>
+    <string name="professions_fireman">Fireman</string>
+    <string name="professions_nurce">Nurce</string>
+    <string name="fruits_banana">Banana</string>
+    <string name="fruits_grape">Grape</string>
+    <string name="fruits_pineapple">Pineapple</string>
 
     <string-array name="languages_array">
         <item>English</item>
