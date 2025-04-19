@@ -12,10 +12,12 @@
     <string name="btn_next">Suivant</string>
     <string name="btn_favorite">Favori</string>
     <string name="clothes_shirt">Chemise</string>
+    <string name="clothes_pants">Pantalon</string>
     <string name="clothes_grove">Gants</string>
     <string name="clothes_shoes">Chaussures</string>
     <string name="professions_doctor">Docteur</string>
     <string name="professions_fireman">Pompier</string>
+    <string name="professions_baker">Boulanger</string>
     <string name="professions_nurse">Infirmière</string>
     <string name="fruits_banana">Banane</string>
     <string name="fruits_grape">Raisin</string>
