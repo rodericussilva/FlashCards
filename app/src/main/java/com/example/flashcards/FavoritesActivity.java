@@ -83,7 +83,7 @@ public class FavoritesActivity extends BaseActivity {
         for (Map.Entry<String, ?> entry : allFavorites.entrySet()) {
             String key = entry.getKey();
             if (key.startsWith(lang + "_") && (Boolean) entry.getValue()) {
-                String originalKey = key.substring(lang.length() + 1); // remove "en_"
+                String originalKey = key.substring(lang.length() + 1);
                 Flashcard card = getFlashcardByKey(originalKey);
                 if (card != null) {
                     flashcards.add(card);
