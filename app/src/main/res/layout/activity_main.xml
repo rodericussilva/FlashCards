@@ -20,7 +20,9 @@
     <Spinner
         android:id="@+id/languageSpinner"
         android:layout_width="match_parent"
-        android:layout_height="39dp" />
+        android:layout_height="39dp"
+        android:paddingEnd="32dp"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/btnStart"
@@ -32,7 +34,7 @@
     <Button
         android:id="@+id/btnFavorites"
         android:layout_width="380dp"
-        android:layout_height="64dp"
+        android:layout_height="69dp"
         android:text="@string/btn_favorites"
         android:textSize="24sp" />
 </LinearLayout>

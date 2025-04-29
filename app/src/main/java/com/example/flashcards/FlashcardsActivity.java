@@ -131,7 +131,9 @@ public class FlashcardsActivity extends BaseActivity {
 
     private void toggleFavorite() {
         Flashcard card = flashcards.get(currentIndex);
-        String key = card.getWordKey();
+        String lang = getCurrentLanguage();
+        String key = lang + "_" + card.getWordKey();
+
         SharedPreferences.Editor editor = sharedPreferences.edit();
         boolean isFavorite = sharedPreferences.getBoolean(key, false);
 
@@ -147,7 +149,12 @@ public class FlashcardsActivity extends BaseActivity {
 
     private void updateFavoriteButton() {
         Flashcard card = flashcards.get(currentIndex);
-        boolean isFavorite = sharedPreferences.getBoolean(card.getWordKey(), false);
+        String key = getCurrentLanguage() + "_" + card.getWordKey();
+        boolean isFavorite = sharedPreferences.getBoolean(key, false);
         btnFavorite.setText(isFavorite ? "★" : "☆");
+    }
+
+    private String getCurrentLanguage() {
+        return Locale.getDefault().getLanguage();
     }
 }

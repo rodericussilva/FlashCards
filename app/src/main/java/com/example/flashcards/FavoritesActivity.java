@@ -26,7 +26,7 @@ public class FavoritesActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flashcards); // Reaproveita layout
+        setContentView(R.layout.activity_flashcards);
 
         flashcardImage = findViewById(R.id.flashcardImage);
         flashcardText = findViewById(R.id.flashcardText);
@@ -77,11 +77,17 @@ public class FavoritesActivity extends BaseActivity {
     }
 
     private void loadFavoriteFlashcards() {
+        String lang = getCurrentLanguage(); // ex: "fr"
         Map<String, ?> allFavorites = sharedPreferences.getAll();
+
         for (Map.Entry<String, ?> entry : allFavorites.entrySet()) {
-            if ((Boolean) entry.getValue()) {
-                String key = entry.getKey();
-                flashcards.add(getFlashcardByKey(key));
+            String key = entry.getKey();
+            if (key.startsWith(lang + "_") && (Boolean) entry.getValue()) {
+                String originalKey = key.substring(lang.length() + 1); // remove "en_"
+                Flashcard card = getFlashcardByKey(originalKey);
+                if (card != null) {
+                    flashcards.add(card);
+                }
             }
         }
     }
@@ -110,5 +116,9 @@ public class FavoritesActivity extends BaseActivity {
             case "colors_white": return new Flashcard(R.drawable.white, key);
             default: return null;
         }
+    }
+
+    private String getCurrentLanguage() {
+        return LocaleHelper.getLanguage(this);
     }
 }
