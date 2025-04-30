@@ -29,6 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:text="@string/btn_start"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="10dp"
         android:textSize="24sp" />
 
@@ -37,6 +39,8 @@
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:text="@string/btn_favorites"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="10dp"
         android:textSize="24sp" />
 </LinearLayout>

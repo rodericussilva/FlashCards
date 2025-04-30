@@ -13,33 +13,43 @@
         android:id="@+id/categoryClothes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/category_clothes" />
+        android:text="@string/category_clothes"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/categoryProfessions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/category_professions" />
+        android:text="@string/category_professions"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/categoryAnimals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/category_animals" />
+        android:text="@string/category_animals"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/categoryFruits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/category_fruits" />
+        android:text="@string/category_fruits"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/categoryColors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/category_colors" />
+        android:text="@string/category_colors"
+        android:backgroundTint="#2C3540"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
