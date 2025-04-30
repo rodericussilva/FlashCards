@@ -38,7 +38,7 @@ public class FavoritesActivity extends BaseActivity {
 
         loadFavoriteFlashcards();
         if (flashcards.isEmpty()) {
-            flashcardText.setText("Nenhum favorito");
+            flashcardText.setText("- - -");
             flashcardText.setVisibility(View.VISIBLE);
             flashcardImage.setVisibility(View.GONE);
             btnNext.setVisibility(View.GONE);
@@ -138,7 +138,7 @@ public class FavoritesActivity extends BaseActivity {
             flashcards.remove(currentIndex);
 
             if (flashcards.isEmpty()) {
-                flashcardText.setText("Nenhum favorito");
+                flashcardText.setText("- - -");
                 flashcardText.setVisibility(View.VISIBLE);
                 flashcardImage.setVisibility(View.GONE);
                 btnNext.setVisibility(View.GONE);
