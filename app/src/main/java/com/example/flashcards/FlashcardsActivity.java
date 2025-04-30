@@ -12,7 +12,9 @@ import java.util.List;
 import java.util.Locale;
 import android.content.SharedPreferences;
 
-public class FlashcardsActivity extends BaseActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class FlashcardsActivity extends AppCompatActivity {
 
     private ImageView flashcardImage;
     private TextView flashcardText;

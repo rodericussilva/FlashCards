@@ -7,12 +7,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
-public class FavoritesActivity extends BaseActivity {
+public class FavoritesActivity extends AppCompatActivity {
 
     private ImageView flashcardImage;
     private TextView flashcardText;
