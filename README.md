@@ -56,3 +56,12 @@ app/
 │ │ └── strings.xml
 └── AndroidManifest.xml
 ```
+## 🌍 Suporte a idiomas
+O app suporta vários idiomas. O idioma atual é detectado automaticamente pelo LocaleHelper.
+Para adicionar ou modificar traduções, edite os arquivos:
+```
+res/values/strings.xml (padrão - inglês)
+res/values-es/strings.xml
+res/values-fr/strings.xml
+res/values-pt/strings.xml
+```
