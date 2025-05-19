@@ -65,3 +65,6 @@ res/values-es/strings.xml
 res/values-fr/strings.xml
 res/values-pt/strings.xml
 ```
+## 🙋‍♂️ Autor
+Desenvolvido por Rodrigo Silva
+📧 Contato: rodericus@aluno.ufc.br
