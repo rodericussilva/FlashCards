@@ -19,7 +19,7 @@ O app permite navegar por imagens com seus respectivos nomes, alternar entre tex
 
 ## 📸 Capturas de tela
 
-> *(Para ser adicionado — recomendado colocar imagens na pasta `/docs` e referenciar no README)*
+> 
 
 ## 🛠️ Tecnologias utilizadas
 
